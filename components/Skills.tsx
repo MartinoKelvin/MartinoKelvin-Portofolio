@@ -6,7 +6,7 @@ import {
   Terminal, MonitorSmartphone, Cpu
 } from "lucide-react";
 import LogoLoop from "./LogoLoop";
-import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs, SiMysql, SiLaravel, SiFramer, SiPostgresql, SiFirebase , SiFilament , SiPython , SiCplusplus , SiHtml5 , SiCss3 , SiJavascript, SiCpanel  } from "react-icons/si";
+import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs, SiMysql, SiLaravel, SiFramer, SiPostgresql, SiFirebase , SiFilament , SiPython , SiCplusplus , SiHtml5 , SiCss3 , SiJavascript, SiCpanel, SiVercel, SiGithub, SiPhp, SiGit, SiDocker , SiShadcnui, SiRailway  } from "react-icons/si";
 
 
 
@@ -26,6 +26,12 @@ const techLogos = [
   { node: <SiCplusplus className="w-28 h-28 text-blue-400" />, title: "C++", href: "https://www.cplusplus.com/" },
   { node: <SiJavascript className="w-28 h-28 text-yellow-500" />, title: "JavaScript", href: "https://www.w3schools.com/js/" },
   { node: <SiCpanel className="w-28 h-28 text-[#FF6B00]" />, title: "Cpanel", href: "https://www.cpanel.net/" },
+  { node: <SiShadcnui className="w-28 h-28 text-black dark:text-white" />, title: "Shadcn UI", href: "https://ui.shadcn.com/" },
+  { node: <SiGithub className="w-28 h-28 text-black dark:text-white" />, title: "Github", href: "https://github.com/" },
+  { node: <SiGit className="w-28 h-28 text-red-500" />, title: "Git", href: "https://git-scm.com/" },
+  { node: <SiDocker className="w-28 h-28 text-blue-700" />, title: "Docker", href: "https://www.docker.com/" },
+  { node: <SiVercel className="w-28 h-28 text-black dark:text-white" />, title: "Vercel", href: "https://vercel.com/" },
+  { node: <SiRailway className="w-28 h-28 text-black dark:text-white" />, title: "Railway", href: "https://railway.app/" },
 ];
 
 const containerVariants = {

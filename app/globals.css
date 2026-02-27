@@ -86,16 +86,6 @@
   --radius-4xl: calc(var(--radius) + 16px);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root { /* zinc-950 */ /* zinc-50 */
-    --surface: #18181b; /* zinc-900 */
-    --surface-border: #27272a; /* zinc-800 */
-    --accent: #a2a291; /* zinc-400 */
-    --primary: #e4e4e7; /* zinc-200 */
-    --primary-foreground: #09090b;
-    --foreground: #a2a291;
-  }
-}
 
 html {
   scroll-behavior: smooth;

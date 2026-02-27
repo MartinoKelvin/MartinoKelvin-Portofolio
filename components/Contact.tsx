@@ -94,10 +94,10 @@ export default function Contact() {
                 {link.icon}
               </div>
               <div className="flex flex-col">
-                <span className="text-xs uppercase tracking-wider font-semibold text-foreground opacity-60">
+                <span className="text-xs uppercase tracking-wider font-bold text-foreground opacity-80">
                   {link.name}
                 </span>
-                <span className="font-medium text-foreground text-lg transition-colors duration-300">
+                <span className="font-semibold text-foreground text-lg transition-colors duration-300 group-hover:text-primary">
                   {link.value}
                 </span>
               </div>

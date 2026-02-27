@@ -6,55 +6,193 @@ import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
   {
+    id: 4,
+    title: "KM - ITERA Website",
+    category: ["Organization", "Frontend", "Backend", "Fullstack"],
+    description: "Official website for Keluarga Mahasiswa (KM) ITERA.",
+    image: "/KM.png",
+    tech: ["Web", "Laravel", "Taiwind", "MySQL","php"],
+    github: "",
+    demo: "https://km-itera.com/"
+  },
+  {
+    id: 5,
+    title: "KMK Website",
+    category: ["Organization", "Frontend", "Backend", "Fullstack"],
+    description: "Official website for Keluarga Mahasiswa Katolik (KMK) ITERA.",
+    image: "/kmk.jpg",
+    tech: ["Web", "Nextjs", "firebase"],
+    github: "",
+    demo: "https://kmkitera.com/"
+  },
+  {
     id: 1,
-    title: "E-Commerce Dashboard",
-    category: "Fullstack",
-    description: "A comprehensive admin dashboard built with Next.js, Prisma, and Tailwind CSS. Features sales analytics, order management, and real-time inventory updates.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
-    tech: ["Next.js", "Tailwind", "Prisma"],
-    github: "https://github.com",
-    demo: "https://demo.com"
+    title: "HMIF Website",
+    category: ["Organization", "Frontend", "Backend", "Fullstack"],
+    description: "Website for Himpunan Mahasiswa Teknik Informatika (HMIF).",
+    image: "/hmif.png",
+    tech: ["Web", "Frontend", "Filament", "React js"],
+    github: "",
+    demo: "https://hmif-itera.com/"
   },
   {
     id: 2,
-    title: "Portfolio Template",
-    category: "Frontend",
-    description: "A highly customizable aesthetic portfolio template for developers. Built with React, Framer Motion for animations, and a sleek dark mode.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
-    tech: ["React", "Framer Motion", "Tailwind"],
-    github: "https://github.com",
-    demo: "https://demo.com"
+    title: "Website Artikel Technology Information",
+    category: ["Fullstack", "Frontend", "Backend"],
+    description: "A technology information article website.",
+    image: "/berita.png",
+    tech: ["Web","Laravel React Starter kit","php","MySQL","tailwind"],
+    github: "https://github.com/MartinoKelvin/article_news",
+    demo: ""
   },
   {
     id: 3,
-    title: "RESTful API Boilerplate",
-    category: "API",
-    description: "A robust starter template for building secure and scalable APIs using Express, Node.js, and MongoDB. Includes JWT authentication and Swagger docs.",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800",
-    tech: ["Node.js", "Express", "MongoDB"],
-    github: "https://github.com",
-    demo: "https://demo.com"
+    title: "Wonderfull Inn",
+    category: ["Frontend", "Fullstack"],
+    description: "Travel agency website to explore and book your next destination.",
+    image: "/wonderfullin.png",
+    tech: ["Web", "React js", "Python Pyramid", "Postgre"],
+    github: "https://github.com/MartinoKelvin/uas-paw-kelompok-6",
+    demo: "https://wonderfull-inn.vercel.app/"
   },
   {
-    id: 4,
-    title: "Task Management App",
-    category: "Fullstack",
-    description: "A beautifully designed Kanban board application for team collaboration. Real-time updates via WebSockets and drag-and-drop functionality.",
-    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&q=80&w=800",
-    tech: ["React", "Socket.io", "Express"],
-    github: "https://github.com",
-    demo: "https://demo.com"
+    id: 11,
+    title: "Top Up Game",
+    category: ["Fullstack", "Frontend", "Backend"],
+    description: "A game top-up platform built with Laravel API and React Frontend.",
+    image: "/top-up-game.png",
+    tech: ["React", "Laravel api", "React js", "tailwind", "MySql"],
+    github: "https://github.com/MartinoKelvin/top-up-game-laravel-api-react-fe",
+    demo: ""
+  },
+  {
+    id: 6,
+    title: "Birthday Website",
+    category: ["Frontend"],
+    description: "A special birthday website created for someone special.",
+    image: "/ultah.jpg",
+    tech: ["HTML", "CSS"],
+    github: "",
+    demo: "https://happybirthdayyaasayang.vercel.app/"
+  },
+  {
+    id: 7,
+    title: "SiCheCo Website Client",
+    category: [ "Frontend"],
+    description: "SICHECO is a website for a company that sells various types of products.",
+    image: "/sicheco.jpg",
+    tech: ["Web", "NextJs", "tailwind"],
+    github: "",
+    demo: "https://sicheco.my.id/"
+  },
+  {
+    id: 8,
+    title: "Search Engine Film",
+    category: ["Fullstack"],
+    description: "A search engine for finding your favorite films.",
+    image: "/film.jpg",
+    tech: ["Web", "html", "css3", "Javascript"],
+    github: "https://github.com/MartinoKelvin/Search-Engine-Film",
+    demo: ""
+  },
+  {
+    id: 16,
+    title: "Bot Collect Diamond",
+    category: ["Other"],
+    description: "A Python bot designed to automatically collect diamonds in-game.",
+    image: "/bot-collect-diamond.png",
+    tech: ["Python", "Game", "Bot"],
+    github: "https://github.com/MartinoKelvin/Tubes1_BrainNotFound",
+    demo: ""
+  },
+  {
+    id: 17,
+    title: "Juppa Jungle",
+    category: ["Other"],
+    description: "An entertaining game titled Juppa Jungle built using Object-Oriented principles.",
+    image: "/juppa-junggle.png",
+    tech: ["Game", "OOP"],
+    github: "https://github.com/MartinoKelvin/Tubes_PBO",
+    demo: ""
+  },
+  {
+    id: 9,
+    title: "Game Suit againt a bot",
+    category: ["Other"],
+    description: "A Rock-Paper-Scissors (Suit) game played against a computer bot.",
+    image: "/suit.jpg",
+    tech: ["Web", "Game", "html", "css3", "Javascript"],
+    github: "https://github.com/MartinoKelvin/Game-Suit",
+    demo: ""
+  },
+  {
+    id: 10,
+    title: "Gallery Photo your idol",
+    category: ["Frontend"],
+    description: "A photo gallery application to showcase pictures of your idols.",
+    image: "/idol.jpg",
+    tech: ["Web", "html", "css3", "Javascript"],
+    github: "https://github.com/MartinoKelvin/Myidolss",
+    demo: ""
+  },
+  {
+    id: 12,
+    title: "Healthyu",
+    category: ["UI/UX"],
+    description: "A comprehensive health and wellness UI/UX prototype.",
+    image: "/Healthyu.png",
+    tech: ["Figma", "UI/UX"],
+    github: "",
+    demo: "https://www.figma.com/proto/KLeSIsjXvtusdcp0eAoY3E/Tugas-Besar-Interaction-Design?node-id=141-151&starting-point-node-id=425%3A969"
+  },
+  {
+    id: 13,
+    title: "Sigap",
+    category: ["UI/UX"],
+    description: "An interactive prototype focusing on responsive functionality.",
+    image: "/sigap.png",
+    tech: ["Figma", "UI/UX"],
+    github: "",
+    demo: "https://www.figma.com/proto/V8i7aGaBq5g7MJnmrenqL3/SIGAP-HI?node-id=10-4&node-type=frame&t=fNTtoZaS23wXLmrf-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=10%3A4&show-proto-sidebar=1"
+  },
+  {
+    id: 14,
+    title: "McLaren",
+    category: ["UI/UX"],
+    description: "An aesthetic design prototype centered around the McLaren concept.",
+    image: "/mclaren.png",
+    tech: ["Figma", "UI/UX"],
+    github: "",
+    demo: "https://www.figma.com/design/RkVeCbcl6EMIlEefuMb2ue/hack?node-id=0-1&p=f&t=hUA8T39yPliOzRd5-0"
+  },
+  {
+    id: 15,
+    title: "Kelola keuangan filament",
+    category: ["Fullstack"],
+    description: "A fullstack financial management application built with Filament PHP.",
+    image: "/keuangan.png",
+    tech: ["PHP", "Filament", "MySQL"],
+    github: "https://github.com/MartinoKelvin/Kelola-keuangan-filament",
+    demo: ""
   }
 ];
 
-const categories = ["All", "Frontend", "Fullstack", "API"];
+const categories = ["All", "Organization", "Fullstack", "Frontend", "Backend", "UI/UX", "Other"];
 
 export default function Projects() {
   const [filter, setFilter] = useState("All");
+  const [visibleCount, setVisibleCount] = useState(6);
+
+  const handleFilterChange = (cat: string) => {
+    setFilter(cat);
+    setVisibleCount(6);
+  };
 
   const filteredProjects = projects.filter(
-    (project) => filter === "All" || project.category === filter
+    (project) => filter === "All" || project.category.includes(filter)
   );
+
+  const displayedProjects = filteredProjects.slice(0, visibleCount);
 
   return (
     <section id="projects" className="py-24 bg-transparent overflow-hidden relative">
@@ -89,7 +227,7 @@ export default function Projects() {
             {categories.map((cat) => (
               <button
                 key={cat}
-                onClick={() => setFilter(cat)}
+                onClick={() => handleFilterChange(cat)}
                 className={`px-6 py-2 rounded-full text-sm font-medium transition-all ${
                   filter === cat 
                     ? "bg-primary text-primary-foreground shadow-md scale-105" 
@@ -104,7 +242,7 @@ export default function Projects() {
 
         <motion.div layout className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <AnimatePresence>
-            {filteredProjects.map((project, index) => (
+            {displayedProjects.map((project, index) => (
               <motion.div
                 key={project.id}
                 layout
@@ -130,19 +268,23 @@ export default function Projects() {
                   <div className="flex justify-between items-start mb-4">
                     <div>
                       <span className="text-xs uppercase tracking-wider text-foreground font-semibold">
-                        {project.category}
+                        {project.category.join(', ')}
                       </span>
                       <h3 className="text-xl font-bold text-foreground mt-1 group-hover:text-primary transition-colors">
                         {project.title}
                       </h3>
                     </div>
                     <div className="flex gap-3 text-foreground">
-                      <a href={project.github} target="_blank" rel="noreferrer" className="hover:scale-110 transition-all">
-                        <Github size={20} />
-                      </a>
-                      <a href={project.demo} target="_blank" rel="noreferrer" className="hover:scale-110 transition-all">
-                        <ExternalLink size={20} />
-                      </a>
+                      {project.github && (
+                        <a href={project.github} target="_blank" rel="noreferrer" className="hover:scale-110 transition-all">
+                          <Github size={20} />
+                        </a>
+                      )}
+                      {project.demo && (
+                        <a href={project.demo} target="_blank" rel="noreferrer" className="hover:scale-110 transition-all">
+                          <ExternalLink size={20} />
+                        </a>
+                      )}
                     </div>
                   </div>
                   
@@ -165,6 +307,23 @@ export default function Projects() {
             ))}
           </AnimatePresence>
         </motion.div>
+
+        {filteredProjects.length > visibleCount && (
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="mt-12 pb-8 flex justify-center relative z-20"
+          >
+            <button
+              onClick={() => setVisibleCount((prev) => prev + 6)}
+              className="px-8 py-3 bg-primary text-primary-foreground font-semibold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+            >
+              More Projects
+            </button>
+          </motion.div>
+        )}
       </div>
     </section>
   );
