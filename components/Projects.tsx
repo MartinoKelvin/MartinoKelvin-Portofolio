@@ -174,6 +174,16 @@ const projects = [
     tech: ["PHP", "Filament", "MySQL"],
     github: "https://github.com/MartinoKelvin/Kelola-keuangan-filament",
     demo: ""
+  },
+  {
+    id: 18,
+    title: "Redeploy Website if.itera.ac.id",
+    category: ["Backend", "Other"],
+    description: "Redeploying the Informatics Engineering ITERA website to a new server.",
+    image: "/if-itera.png",
+    tech: ["Server", "Deployment"],
+    github: "",
+    demo: "https://if.itera.ac.id/"
   }
 ];
 
@@ -195,7 +205,7 @@ export default function Projects() {
   const displayedProjects = filteredProjects.slice(0, visibleCount);
 
   return (
-    <section id="projects" className="py-24 bg-transparent overflow-hidden relative">
+    <section id="projects" className="py-16 md:py-24 bg-transparent overflow-hidden relative">
       <div className="container mx-auto px-6 max-w-5xl relative z-10">
         <div className="text-center mb-16">
           <motion.h2 
@@ -203,9 +213,10 @@ export default function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 0.6 }}
-            className="text-3xl font-bold mb-4 tracking-tight"
+            className="text-3xl md:text-4xl font-bold mb-4 tracking-tight"
           >
             Featured Projects
+
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 30 }}
@@ -222,13 +233,13 @@ export default function Projects() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: false, amount: 0.8 }}
             transition={{ duration: 0.5, type: "spring" }}
-            className="flex flex-wrap justify-center gap-4"
+            className="flex flex-wrap justify-center gap-2 md:gap-4"
           >
             {categories.map((cat) => (
               <button
                 key={cat}
                 onClick={() => handleFilterChange(cat)}
-                className={`px-6 py-2 rounded-full text-sm font-medium transition-all ${
+                className={`px-4 md:px-6 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-medium transition-all ${
                   filter === cat 
                     ? "bg-primary text-primary-foreground shadow-md scale-105" 
                     : "bg-background text-foreground border border-surface-border hover:border-foreground hover:scale-105"

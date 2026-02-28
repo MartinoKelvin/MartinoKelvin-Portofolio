@@ -54,7 +54,7 @@ const itemVariants = {
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-24 bg-transparent border-t border-surface-border border-b overflow-hidden relative">
+    <section id="skills" className="py-16 md:py-24 bg-transparent border-t border-surface-border border-b overflow-hidden relative">
       <div className="container mx-auto px-6 max-w-5xl relative z-10">
         <div className="text-center mb-16">
           <motion.h2 

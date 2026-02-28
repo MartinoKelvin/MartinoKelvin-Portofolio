@@ -55,8 +55,13 @@ export default function Navbar() {
       }`}
     >
       <div className="px-6 flex items-center justify-between">
-        <div className="text-xl font-bold tracking-tight text-foreground cursor-pointer">
-          <Link to="hero" smooth={true} duration={500}>K.P.</Link>
+        <div className="flex items-center cursor-pointer">
+          <Link to="hero" smooth={true} duration={500}>
+            {/* Dark Mode Logo */}
+            <img src="/logo-nobg.png" alt="Martino Logo" className="h-8 md:h-10 w-auto hidden dark:block" />
+            {/* Light Mode Logo */}
+            <img src="/logo-nobg.png" alt="Martino Logo" className="h-8 md:h-10 w-auto block dark:hidden" />
+          </Link>
         </div>
 
         {/* Desktop Menu */}

@@ -6,8 +6,8 @@ import { ArrowDown } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden">
-      <div className="container mx-auto px-6 max-w-6xl flex flex-col-reverse md:flex-row items-center justify-between relative z-10 gap-12 pt-10">
+    <section id="hero" className="min-h-screen flex items-center justify-center pt-24 md:pt-20 relative overflow-hidden">
+      <div className="container mx-auto px-6 max-w-6xl flex flex-col-reverse md:flex-row items-center justify-between relative z-10 gap-8 md:gap-12 pt-6 md:pt-10">
         
         <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
           <motion.p
@@ -25,7 +25,7 @@ export default function Hero() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-foreground"
+            className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight mb-4 md:mb-6 text-foreground"
           >
             Building Aesthetic <br className="hidden md:block"/> Digital Experiences
           </motion.h1>
@@ -35,7 +35,7 @@ export default function Hero() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="text-lg md:text-xl text-foreground max-w-xl mb-10 leading-relaxed"
+            className="text-base sm:text-lg md:text-xl text-foreground max-w-xl mb-8 md:mb-10 leading-relaxed"
           >
             Hi, I am a passionate developer focused on creating beautiful, functional, and user-centric web applications. Let's build something great together.
           </motion.p>
@@ -72,7 +72,7 @@ export default function Hero() {
             whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
             viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 0.6, type: "spring", bounce: 0.5 }}
-            className="w-72 h-72 md:w-[450px] md:h-[450px] relative group"
+            className="w-64 h-64 sm:w-72 sm:h-72 md:w-[450px] md:h-[450px] relative group"
           >
             <img 
               src="/hero.png" 

@@ -62,7 +62,7 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-24 bg-transparent relative overflow-hidden">
+    <section id="experience" className="py-16 md:py-24 bg-transparent relative overflow-hidden">
       <div className="container mx-auto px-6 max-w-4xl relative z-10">
         <div className="text-center mb-16">
           <motion.h2
@@ -70,7 +70,7 @@ export default function Experience() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.6 }}
-            className="text-3xl font-bold mb-4 tracking-tight"
+            className="text-3xl md:text-4xl font-bold mb-4 tracking-tight"
           >
             My Journey
           </motion.h2>
@@ -106,11 +106,11 @@ export default function Experience() {
                     <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
                       {exp.title}
                     </h3>
-                    <p className="text-foreground/80 font-medium mt-1">
+                    <p className="text-foreground/80 font-medium mt-1 text-sm md:text-base">
                       {exp.company}
                     </p>
                   </div>
-                  <span className="inline-block px-4 py-1.5 bg-surface text-foreground text-sm font-semibold rounded-full w-fit border border-surface-border">
+                  <span className="inline-block px-3 md:px-4 py-1 md:py-1.5 bg-surface text-foreground text-xs md:text-sm font-semibold rounded-full w-fit border border-surface-border mt-2 md:mt-0">
                     {exp.year}
                   </span>
                 </div>

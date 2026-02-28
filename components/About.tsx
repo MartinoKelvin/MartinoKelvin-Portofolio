@@ -4,21 +4,21 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section id="about" className="py-24 bg-transparent relative overflow-hidden">
+    <section id="about" className="py-16 md:py-24 bg-transparent relative overflow-hidden">
       <div className="container mx-auto px-6 max-w-4xl relative z-10">
-        <div className="flex flex-col md:flex-row gap-12 items-center">
+        <div className="flex flex-col md:flex-row gap-10 md:gap-12 items-center">
           
           <motion.div
             initial={{ opacity: 0, x: -100, rotate: -5 }}
             whileInView={{ opacity: 1, x: 0, rotate: 0 }}
             viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.8, type: "spring", bounce: 0.4 }}
-            className="md:w-1/3"
+            className="w-full max-w-[260px] sm:max-w-[320px] md:max-w-none md:w-1/3 mx-auto"
           >
             <div className="w-full aspect-square rounded-2xl overflow-hidden shadow-2xl border border-surface-border relative group">
               <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition duration-500 z-10" />
               <img 
-                src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&q=80&w=600" 
+                src="/martino-kelvin-about-me.png" 
                 alt="About me" 
                 className="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:scale-110 group-hover:opacity-100 transition duration-700"
               />
@@ -30,19 +30,19 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.8, type: "spring", bounce: 0.4 }}
-            className="md:w-2/3"
+            className="w-full md:w-2/3 text-center md:text-left"
           >
             <motion.h2 
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false, amount: 0.8 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-3xl font-bold mb-6 text-foreground tracking-tight border-b-2 border-surface-border pb-4 inline-block"
+              className="text-3xl md:text-4xl font-bold mb-6 text-foreground tracking-tight border-b-2 border-surface-border pb-4 inline-block"
             >
               About Me
             </motion.h2>
             
-            <div className="space-y-4 text-foreground text-lg leading-relaxed">
+            <div className="space-y-4 text-foreground text-base md:text-lg leading-relaxed text-justify md:text-left">
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}

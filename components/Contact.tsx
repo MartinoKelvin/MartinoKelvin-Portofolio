@@ -7,8 +7,8 @@ import { SiWhatsapp } from "react-icons/si";
 const contactLinks = [
   {
     name: "Email",
-    value: "hello@example.com",
-    href: "mailto:hello@example.com",
+    value: "martino.123140165@student.itera.ac.id",
+    href: "mailto:martino.123140165@student.itera.ac.id",
     icon: <Mail className="w-6 h-6" />,
     hoverColor: "group-hover:text-red-500",
     hoverBorder: "hover:border-red-500",
@@ -16,8 +16,8 @@ const contactLinks = [
   },
   {
     name: "Instagram",
-    value: "@yourinstagram",
-    href: "https://instagram.com/",
+    value: "@martinokelvin_",
+    href: "https://instagram.com/martinokelvin_",
     icon: <Instagram className="w-6 h-6" />,
     hoverColor: "group-hover:text-pink-500",
     hoverBorder: "hover:border-pink-500",
@@ -25,8 +25,8 @@ const contactLinks = [
   },
   {
     name: "LinkedIn",
-    value: "Your Name",
-    href: "https://linkedin.com/in/",
+    value: "Martino Kelvin",
+    href: "https://linkedin.com/in/martino-kelvin/",
     icon: <Linkedin className="w-6 h-6" />,
     hoverColor: "group-hover:text-blue-500",
     hoverBorder: "hover:border-blue-500",
@@ -34,8 +34,8 @@ const contactLinks = [
   },
   {
     name: "GitHub",
-    value: "yourgithub",
-    href: "https://github.com/",
+    value: "MartinoKelvin",
+    href: "https://github.com/MartinoKelvin",
     icon: <Github className="w-6 h-6" />,
     hoverColor: "group-hover:text-foreground",
     hoverBorder: "hover:border-foreground",
@@ -43,8 +43,8 @@ const contactLinks = [
   },
   {
     name: "WhatsApp",
-    value: "+62 812-3456-7890",
-    href: "https://wa.me/6281234567890",
+    value: "+62 895-6213-66589",
+    href: "https://wa.me/62895621366589",
     icon: <SiWhatsapp className="w-6 h-6" />,
     hoverColor: "group-hover:text-green-500",
     hoverBorder: "hover:border-green-500",
@@ -54,7 +54,7 @@ const contactLinks = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 bg-transparent overflow-hidden relative">
+    <section id="contact" className="py-16 md:py-24 bg-transparent overflow-hidden relative">
       <div className="container mx-auto px-6 max-w-4xl relative z-10">
         <div className="text-center mb-16">
           <motion.h2 
@@ -88,16 +88,16 @@ export default function Contact() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false, amount: 0.5 }}
               transition={{ duration: 0.5, delay: i * 0.1, type: "spring", bounce: 0.4 }}
-              className={`flex items-center gap-5 p-5 bg-surface/40 backdrop-blur-md rounded-2xl border border-surface-border shadow-sm hover:shadow-xl transition-all duration-300 group w-full sm:w-[320px] hover:-translate-y-2 ${link.hoverBorder}`}
+              className={`flex items-center gap-5 p-5 bg-surface/40 backdrop-blur-md rounded-2xl border border-surface-border shadow-sm hover:shadow-xl transition-all duration-300 group w-full sm:w-auto sm:min-w-[320px] max-w-full hover:-translate-y-2 ${link.hoverBorder}`}
             >
-              <div className={`w-14 h-14 bg-background/50 rounded-full flex items-center justify-center border border-surface-border transition-colors duration-300 text-foreground ${link.hoverColor} ${link.hoverBg}`}>
+              <div className={`w-14 h-14 bg-background/50 rounded-full flex items-center justify-center border border-surface-border transition-colors duration-300 text-foreground shrink-0 ${link.hoverColor} ${link.hoverBg}`}>
                 {link.icon}
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col overflow-hidden">
                 <span className="text-xs uppercase tracking-wider font-bold text-foreground opacity-80">
                   {link.name}
                 </span>
-                <span className="font-semibold text-foreground text-lg transition-colors duration-300 group-hover:text-primary">
+                <span className="font-semibold text-foreground text-base sm:text-lg transition-colors duration-300 group-hover:text-primary truncate" title={link.value}>
                   {link.value}
                 </span>
               </div>
