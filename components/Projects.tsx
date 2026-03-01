@@ -36,6 +36,16 @@ const projects = [
     demo: "https://hmif-itera.com/"
   },
   {
+    id: 19,
+    title: "Website Desa Batanghari Ogan",
+    category: ["Fullstack", "Frontend"],
+    description: "Official website for Desa Batanghari Ogan. Role: Fullstack Developer.",
+    image: "/desa-batang-hari-ogan.png",
+    tech: ["Web", "Blade", "opensid", "CodeIgniter"],
+    github: "",
+    demo: "https://batanghariogan.com/"
+  },
+  {
     id: 2,
     title: "Website Artikel Technology Information",
     category: ["Fullstack", "Frontend", "Backend"],
